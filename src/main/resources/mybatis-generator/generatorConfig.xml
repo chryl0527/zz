@@ -66,12 +66,12 @@
         <!--<table tableName="${table.name004}" domainObjectName="${entity.name004}"/>-->
         <!--<table tableName="${table.name005}" domainObjectName="${entity.name005}"/>-->
         <!--  -->
-        <!--<table tableName="${table.name006}" domainObjectName="${entity.name006}"/>-->
+        <table tableName="${table.name006}" domainObjectName="${entity.name006}"/>
         <!--<table tableName="${table.name007}" domainObjectName="${entity.name007}"/>-->
         <!--<table tableName="${table.name008}" domainObjectName="${entity.name008}"/>-->
         <!--<table tableName="${table.name009}" domainObjectName="${entity.name009}"/>-->
-        <table tableName="${table.name010}" domainObjectName="${entity.name010}"/>
-        <table tableName="${table.name011}" domainObjectName="${entity.name011}"/>
+        <!--<table tableName="${table.name010}" domainObjectName="${entity.name010}"/>-->
+        <!--<table tableName="${table.name011}" domainObjectName="${entity.name011}"/>-->
 
     </context>
 </generatorConfiguration>

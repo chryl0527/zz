@@ -17,8 +17,6 @@ public class SsProjectManage implements Serializable {
 
     private String projectLeaderPhone;
 
-    private String projectGProId;
-
     private static final long serialVersionUID = 1L;
 
     public String getProjectId() {
@@ -77,14 +75,6 @@ public class SsProjectManage implements Serializable {
         this.projectLeaderPhone = projectLeaderPhone == null ? null : projectLeaderPhone.trim();
     }
 
-    public String getProjectGProId() {
-        return projectGProId;
-    }
-
-    public void setProjectGProId(String projectGProId) {
-        this.projectGProId = projectGProId == null ? null : projectGProId.trim();
-    }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -98,7 +88,6 @@ public class SsProjectManage implements Serializable {
         sb.append(", projectStandard=").append(projectStandard);
         sb.append(", projectLeaderName=").append(projectLeaderName);
         sb.append(", projectLeaderPhone=").append(projectLeaderPhone);
-        sb.append(", projectGProId=").append(projectGProId);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
