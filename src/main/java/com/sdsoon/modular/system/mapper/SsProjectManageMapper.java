@@ -2,8 +2,9 @@ package com.sdsoon.modular.system.mapper;
 
 import com.sdsoon.modular.system.po.SsProjectManage;
 import com.sdsoon.modular.system.po.SsProjectManageExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SsProjectManageMapper {
     long countByExample(SsProjectManageExample example);

@@ -1,6 +1,7 @@
 package com.sdsoon.modular.system.po;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class SsProjectManage implements Serializable {
     private String projectId;
@@ -17,7 +18,19 @@ public class SsProjectManage implements Serializable {
 
     private String projectLeaderPhone;
 
-    private String projectGProId;
+    private Date projectCreateTime;
+
+    private Date projectEndTime;
+
+    private Integer projectStatus;
+
+    private Integer projectLevel;
+
+    private String projectDocInfo;
+
+    private String projectPeopleName;
+
+    private Integer projectProdStatus;
 
     private static final long serialVersionUID = 1L;
 
@@ -77,12 +90,60 @@ public class SsProjectManage implements Serializable {
         this.projectLeaderPhone = projectLeaderPhone == null ? null : projectLeaderPhone.trim();
     }
 
-    public String getProjectGProId() {
-        return projectGProId;
+    public Date getProjectCreateTime() {
+        return projectCreateTime;
     }
 
-    public void setProjectGProId(String projectGProId) {
-        this.projectGProId = projectGProId == null ? null : projectGProId.trim();
+    public void setProjectCreateTime(Date projectCreateTime) {
+        this.projectCreateTime = projectCreateTime;
+    }
+
+    public Date getProjectEndTime() {
+        return projectEndTime;
+    }
+
+    public void setProjectEndTime(Date projectEndTime) {
+        this.projectEndTime = projectEndTime;
+    }
+
+    public Integer getProjectStatus() {
+        return projectStatus;
+    }
+
+    public void setProjectStatus(Integer projectStatus) {
+        this.projectStatus = projectStatus;
+    }
+
+    public Integer getProjectLevel() {
+        return projectLevel;
+    }
+
+    public void setProjectLevel(Integer projectLevel) {
+        this.projectLevel = projectLevel;
+    }
+
+    public String getProjectDocInfo() {
+        return projectDocInfo;
+    }
+
+    public void setProjectDocInfo(String projectDocInfo) {
+        this.projectDocInfo = projectDocInfo == null ? null : projectDocInfo.trim();
+    }
+
+    public String getProjectPeopleName() {
+        return projectPeopleName;
+    }
+
+    public void setProjectPeopleName(String projectPeopleName) {
+        this.projectPeopleName = projectPeopleName == null ? null : projectPeopleName.trim();
+    }
+
+    public Integer getProjectProdStatus() {
+        return projectProdStatus;
+    }
+
+    public void setProjectProdStatus(Integer projectProdStatus) {
+        this.projectProdStatus = projectProdStatus;
     }
 
     @Override
@@ -98,7 +159,13 @@ public class SsProjectManage implements Serializable {
         sb.append(", projectStandard=").append(projectStandard);
         sb.append(", projectLeaderName=").append(projectLeaderName);
         sb.append(", projectLeaderPhone=").append(projectLeaderPhone);
-        sb.append(", projectGProId=").append(projectGProId);
+        sb.append(", projectCreateTime=").append(projectCreateTime);
+        sb.append(", projectEndTime=").append(projectEndTime);
+        sb.append(", projectStatus=").append(projectStatus);
+        sb.append(", projectLevel=").append(projectLevel);
+        sb.append(", projectDocInfo=").append(projectDocInfo);
+        sb.append(", projectPeopleName=").append(projectPeopleName);
+        sb.append(", projectProdStatus=").append(projectProdStatus);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
